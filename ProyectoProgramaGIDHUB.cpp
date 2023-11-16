@@ -5,9 +5,11 @@ int main(){//funcion principal
     int suma_materias=0;
     int V_cuantas_materias=0;//variable para saber cuantas materias son
     int arreglo_materias[V_cuantas_materias];//inivcialzar el arreglo para almacenar las calificaciones
+    int num, factorial = 1; //variables y asignacion de valor
     cout << "\n\nMenu de opciones";
     cout << "\n1. Promedio de calificaciones";//imprime el menu
     cout << "\n2. Calcular areas de figuras";
+    cout << "\n3. Factorial de numero";
     cout << "\n Elige una opcion: ";
     cin >> Variable_opcion;//lee la opcion
     switch(Variable_opcion){//este es el cuerpo de los casos
@@ -48,7 +50,7 @@ int main(){//funcion principal
                      cout<< "\nIngresa un lado : ";
                      cin>>l;
                      area = l*l;
-                     cout<< "\nEl area de tu cuadrado ES¡: "<<area; 
+                     cout<< "\nEl area de tu cuadrado ESï¿½: "<<area; 
                 break;
 
                 case 'c':
@@ -59,6 +61,14 @@ int main(){//funcion principal
                     area = 3.14 * (radio*radio);
                     cout << "\nEl area del circulo es: " << area;
                     break;
+            case 3:
+                cout << "Elige el numero para sacar el factorial"<<endl;
+                cin >> num;
+                for(int i = 1; i<=num; ++i){
+                    factorial *= 1;
+                    cout << "El factorial del numero "<<num<<"es "<< factorial;
+                    break;
+                }          
             }
         }
     }
